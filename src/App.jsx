@@ -13,7 +13,6 @@ export function App() {
     const [selectedAnime, setSelectedAnime] = useState(animes[0]);
     useEffect(() => {
         getAnimesList().then((result) => {
-            // console.log(result.data);
             setAnimes(result.data);
         });
     }, []);
